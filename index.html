@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Metadatos Comerciales -->
+  <title>Nina's Scoops | Cucharas Místicas & Mystery Scoops</title>
+  <meta name="description" content="Descubre la fortuna en cada palada. Scoops sorpresa de cuarzos, joyería mágica y papelería grabados en vivo para redes sociales." />
+  <meta name="keywords" content="mystery scoops, scoops magicos, cuarzos, joyeria, unboxing, tiktok scoops" />
+  <meta name="author" content="Nina's Scoops" />
+
+  <link rel="shortcut icon" href="./assets/images/Logo Nina'sCoops.png" type="image/svg=xml">
+
+
+  <!-- Open Graph / Meta / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nina's Scoops | Cucharas Místicas ✨" />
+  <meta property="og:description" content="Elige tu pala mágica y recibe una combinación sorpresa de tesoros grabados en video para redes." />
+  <meta property="og:image" content="assets/images/Portada.png" />
+
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pastel: {
+              bg: '#FAF7FD',
+              card: '#FFFFFF',
+              lilac: '#E4D5F7',
+              lilacDeep: '#A882DD',
+              pink: '#FCE7F0',
+              pinkDeep: '#E279A3',
+              peach: '#FFE8D6',
+              mint: '#D8F3DC',
+              border: '#EDE7F6',
+              textMain: '#2D283E',
+              textMuted: '#6E677F'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Quicksand', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-pastel-bg text-pastel-textMain font-sans antialiased selection:bg-pastel-lilac selection:text-pastel-textMain overflow-x-hidden">
+
+  <!-- ========================================================
+       BARRA DE NAVEGACIÓN
+  ======================================================== -->
+  <nav class="sticky top-0 z-50 bg-pastel-bg/95 backdrop-blur-md border-b border-pastel-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between relative">
+      
+      <!-- Brand Logo con desborde estético -->
+      <a href="#home" class="relative z-40 flex items-center group">
+        <img 
+          src="assets/images/Logo Nina'sCoops.png" 
+          alt="Nina's Scoop Logo" 
+          class="h-32 sm:h-40 md:h-48 lg:h-52 w-auto object-contain transition-transform duration-200 group-hover:scale-105 drop-shadow-xl translate-y-5 sm:translate-y-7 pointer-events-auto"
+        />
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-pastel-textMuted">
+        <a href="#home" class="hover:text-pastel-lilacDeep transition">Inicio</a>
+        <a href="#how-it-works" class="hover:text-pastel-lilacDeep transition">¿Cómo Funciona?</a>
+        <a href="#loot" class="hover:text-pastel-lilacDeep transition">El Botín</a>
+        <a href="#feed" class="hover:text-pastel-lilacDeep transition">Rituales</a>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="#shop" class="bg-pastel-lilacDeep hover:bg-pastel-pinkDeep text-white text-xs sm:text-sm font-bold px-5 py-2.5 rounded-full shadow-sm transition flex items-center gap-1.5">
+          <span>Pedir Scoop</span> 🥄
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       SECCIÓN 1: HERO (#home)
+  ======================================================== -->
+  <section 
+    id="home" 
+    class="relative w-full min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] flex items-center justify-center py-8 sm:py-10 px-4 sm:px-8 overflow-hidden"
+    style="
+      background-color: #F8D7F3;
+      background-image: url('assets/images/Portada.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    "
+  >
+    <div class="relative z-10 w-full max-w-[92%] sm:max-w-md lg:max-w-xl mx-auto text-center bg-white/90 backdrop-blur-md border border-white/80 shadow-xl rounded-3xl p-5 sm:p-7 lg:p-9 my-auto">
+      
+      <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white border border-pastel-border text-[11px] sm:text-xs text-pastel-lilacDeep font-bold shadow-sm mb-3">
+        <span>🌸 Descubre la fortuna en cada cucharada</span>
+      </div>
+      
+      <h1 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-pastel-textMain mb-2.5 leading-snug tracking-tight">
+        La magia de los scoops <br class="hidden sm:inline">
+        <span class="text-pastel-pinkDeep">directo a tus manos</span>
+      </h1>
+      
+      <p class="text-xs sm:text-sm text-pastel-textMuted max-w-sm sm:max-w-md mx-auto mb-5 leading-relaxed">
+        Elige tu pala mágica y recibe una combinación sorpresa de tesoros, papeleria, y accesorios grabados en video para redes.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-2.5">
+        <a href="#shop" class="w-full sm:w-auto bg-pastel-lilacDeep hover:bg-pastel-pinkDeep text-white font-bold px-6 py-2.5 rounded-2xl shadow-sm text-xs sm:text-sm transition text-center">
+          Elegir mi pala ✨
+        </a>
+        <a href="#loot" class="w-full sm:w-auto bg-white hover:bg-pastel-bg border border-pastel-border text-pastel-textMain font-semibold px-6 py-2.5 rounded-2xl shadow-sm text-xs sm:text-sm transition text-center">
+          Ver qué incluye
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 2: CÓMO FUNCIONA (#how-it-works)
+  ======================================================== -->
+  <section 
+    id="how-it-works" 
+    class="relative w-full pt-8 sm:pt-12 pb-16 sm:pb-24 border-y border-pastel-border overflow-hidden"
+    style="
+      background-color: #FFFFFF;
+      background-image: url('assets/images/como-funciona.png');
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    "
+  >
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-8 sm:mb-12 pt-2">
+        <span class="inline-block text-[11px] sm:text-xs font-bold text-pastel-lilacDeep uppercase tracking-wider bg-white/95 backdrop-blur-md px-3.5 sm:px-4 py-1 rounded-full border border-pastel-border shadow-sm">
+          Simple y transparente
+        </span>
+        <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-pastel-textMain mt-2 drop-shadow-sm">
+          ¿Cómo funciona Nina's scoops?
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+        <div class="bg-white/95 backdrop-blur-md border border-pastel-border p-5 sm:p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-pastel-lilac/40 flex items-center justify-center text-lg sm:text-xl mb-3">🥄</div>
+          <span class="text-[10px] sm:text-[11px] font-bold text-pastel-lilacDeep uppercase tracking-wide">Paso 01</span>
+          <h3 class="font-display font-bold text-sm sm:text-base text-pastel-textMain mt-1 mb-1.5">Escoge tu Scoop</h3>
+          <p class="text-xs text-pastel-textMuted leading-relaxed">Selecciona 1, 2 o 3 paladas de tesoros sorpresa.</p>
+        </div>
+
+        <div class="bg-white/95 backdrop-blur-md border border-pastel-border p-5 sm:p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-pastel-pink/60 flex items-center justify-center text-lg sm:text-xl mb-3">🎥</div>
+          <span class="text-[10px] sm:text-[11px] font-bold text-pastel-pinkDeep uppercase tracking-wide">Paso 02</span>
+          <h3 class="font-display font-bold text-sm sm:text-base text-pastel-textMain mt-1 mb-1.5">Grabamos tu Pedido</h3>
+          <p class="text-xs text-pastel-textMuted leading-relaxed">Grabamos tu scoop para TikTok etiquetando tu @usuario.</p>
+        </div>
+
+        <div class="bg-white/95 backdrop-blur-md border border-pastel-border p-5 sm:p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-pastel-mint/80 flex items-center justify-center text-lg sm:text-xl mb-3">🎀</div>
+          <span class="text-[10px] sm:text-[11px] font-bold text-emerald-600 uppercase tracking-wide">Paso 03</span>
+          <h3 class="font-display font-bold text-sm sm:text-base text-pastel-textMain mt-1 mb-1.5">Recibe tu Paquete</h3>
+          <p class="text-xs text-pastel-textMuted leading-relaxed">Empaque protegido y sellado místicamente hasta tu casa.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 3: EL BOTÍN (#loot) - NUEVO CONTENIDO KAWAII
+  ======================================================== -->
+  <section 
+    id="loot" 
+    class="relative w-full py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-pastel-border overflow-hidden"
+    style="
+      background-color: #EBDCF8;
+      background-image: url('assets/images/que-puede-salir.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    "
+  >
+    <div class="relative z-10 max-w-6xl mx-auto">
+      
+      <!-- Encabezado de la sección -->
+      <div class="text-center max-w-xl mx-auto mb-10 sm:mb-14">
+        <span class="inline-block text-xs font-bold text-pastel-lilacDeep uppercase tracking-wider bg-white/90 backdrop-blur-md px-4 py-1 rounded-full border border-pastel-border shadow-sm mb-2">
+          Tesoros del Caldero ✨
+        </span>
+        <h2 class="font-display text-2xl sm:text-4xl font-extrabold text-pastel-textMain tracking-tight">
+          ¿Qué puede salir en tu scoop?
+        </h2>
+        <p class="text-xs sm:text-sm text-pastel-textMuted mt-2">
+          Variedad de piezas mágicas que rotan y se renuevan constantemente en cada caldero.
+        </p>
+      </div>
+
+      <!-- Tarjetas de Categorías del Botín -->
+      <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Tarjeta 1: Habitual -->
+        <div class="bg-white/85 backdrop-blur-md border border-white/80 rounded-3xl p-5 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-pastel-lilac/50 flex items-center justify-center text-2xl shadow-inner">
+              ✏️
+            </div>
+            <span class="text-[10px] font-bold text-purple-700 bg-pastel-lilac/60 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Habitual
+            </span>
+            <h3 class="font-display font-bold text-sm sm:text-base text-pastel-textMain mt-2.5">
+              Accesorios Hechizados
+            </h3>
+            <p class="text-xs text-pastel-textMuted mt-1 leading-relaxed">
+              Bolígrafos de diseño, stickers, lápices y borradores kawaii.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Encantado -->
+        <div class="bg-white/85 backdrop-blur-md border border-white/80 rounded-3xl p-5 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-pastel-pink/70 flex items-center justify-center text-2xl shadow-inner">
+              📝
+            </div>
+            <span class="text-[10px] font-bold text-pastel-pinkDeep bg-pastel-pink px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Encantado
+            </span>
+            <h3 class="font-display font-bold text-sm sm:text-base text-pastel-textMain mt-2.5">
+              Papelería Aesthetic
+            </h3>
+            <p class="text-xs text-pastel-textMuted mt-1 leading-relaxed">
+              Libretitas de bolsillo, post-its estéticos, resaltadores pastel y accesorios organizadores.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Raro -->
+        <div class="bg-white/85 backdrop-blur-md border border-white/80 rounded-3xl p-5 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-pastel-peach flex items-center justify-center text-2xl shadow-inner">
+              🎀
+            </div>
+            <span class="text-[10px] font-bold text-amber-800 bg-pastel-peach/90 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Raro
+            </span>
+            <h3 class="font-display font-bold text-sm sm:text-base text-pastel-textMain mt-2.5">
+              Accesorios Mágicos
+            </h3>
+            <p class="text-xs text-pastel-textMuted mt-1 leading-relaxed">
+              Monederos de personajes Sanrio, cepillos glitter, medias tiernas y cuadernos temáticos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Legendario -->
+        <div class="bg-white/85 backdrop-blur-md border border-white/80 rounded-3xl p-5 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-pastel-mint flex items-center justify-center text-2xl shadow-inner">
+              👑
+            </div>
+            <span class="text-[10px] font-bold text-emerald-700 bg-pastel-mint px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              Legendario
+            </span>
+            <h3 class="font-display font-bold text-sm sm:text-base text-pastel-textMain mt-2.5">
+              El Gran Tesoro
+            </h3>
+            <p class="text-xs text-pastel-textMuted mt-1 leading-relaxed">
+              ¡Premios mayores! Termos especiales, mini proyectores, guantes Kuromi y sorpresas de Gachapón.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN: RITUALES COMPARTIDOS (#feed)
+  ======================================================== -->
+  <section 
+    id="feed" 
+    class="relative w-full py-14 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-pastel-border overflow-hidden"
+    style="
+      background-color: #FAF5FF;
+      background-image: url('assets/images/rituales.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    "
+  >
+    <div class="relative z-10 max-w-6xl mx-auto">
+      
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 sm:mb-10 gap-4">
+        <div class="max-w-xl">
+          <span class="inline-block text-xs font-bold text-pastel-lilacDeep uppercase tracking-wider bg-white/90 backdrop-blur-sm px-3.5 py-1 rounded-full border border-pastel-border shadow-sm mb-2">
+            Comunidad Mística ✨
+          </span>
+          <h2 class="font-display text-2xl sm:text-4xl font-extrabold text-pastel-textMain tracking-tight drop-shadow-sm">
+            Rituales de Scoops Recientes
+          </h2>
+          <p class="text-xs sm:text-sm text-pastel-textMuted mt-1.5 leading-relaxed">
+            Mira cómo sacamos los pedidos en vivo y los tesoros que le tocaron a cada usuario en TikTok.
+          </p>
+        </div>
+        
+        <a 
+          href="https://tiktok.com/@tu_usuario" 
+          target="_blank" 
+          class="shrink-0 inline-flex items-center gap-2 bg-white/90 hover:bg-white border border-pastel-border text-pastel-lilacDeep hover:text-pastel-pinkDeep text-xs sm:text-sm font-bold px-4 py-2.5 rounded-2xl shadow-sm transition"
+        >
+          <span>Seguir rituales en TikTok</span>
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.99v7.75c-.01 2.32-.78 4.67-2.34 6.38-1.74 1.96-4.35 3.03-6.99 2.87-2.92-.15-5.63-1.79-7.01-4.38-1.52-2.78-1.29-6.38.58-8.94 1.7-2.35 4.54-3.69 7.45-3.41v4.13c-1.42-.15-2.9.27-3.97 1.25-.99.88-1.5 2.24-1.37 3.57.11 1.34.92 2.53 2.13 3.12 1.23.61 2.75.52 3.89-.25.86-.56 1.41-1.53 1.48-2.54V.02z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="flex gap-4 sm:gap-5 overflow-x-auto no-scrollbar pb-4 pt-1 snap-x snap-mandatory">
+        
+        <div class="w-56 sm:w-60 shrink-0 snap-start bg-white/90 backdrop-blur-md border border-white/80 rounded-3xl p-3 shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-200">
+          <div class="h-64 sm:h-72 rounded-2xl bg-gradient-to-b from-purple-100 via-pink-100 to-rose-100 flex flex-col justify-between p-3.5 relative overflow-hidden group cursor-pointer">
+            <span class="self-end bg-white/90 backdrop-blur-sm text-[10px] font-bold text-pastel-textMain px-2.5 py-0.5 rounded-full shadow-sm">TikTok</span>
+            <div class="w-12 h-12 rounded-full bg-white/90 shadow-md self-center flex items-center justify-center text-pastel-lilacDeep group-hover:scale-110 transition">▶</div>
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-2.5 shadow-sm">
+              <p class="text-xs font-bold text-pastel-textMain truncate">Scoop para @valeria_99</p>
+              <p class="text-[11px] text-pastel-pinkDeep font-medium">✨ ¡Cuarzo rosa gigante!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-56 sm:w-60 shrink-0 snap-start bg-white/90 backdrop-blur-md border border-white/80 rounded-3xl p-3 shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-200">
+          <div class="h-64 sm:h-72 rounded-2xl bg-gradient-to-b from-pink-100 via-amber-50 to-purple-100 flex flex-col justify-between p-3.5 relative overflow-hidden group cursor-pointer">
+            <span class="self-end bg-white/90 backdrop-blur-sm text-[10px] font-bold text-pastel-textMain px-2.5 py-0.5 rounded-full shadow-sm">Reel</span>
+            <div class="w-12 h-12 rounded-full bg-white/90 shadow-md self-center flex items-center justify-center text-pastel-lilacDeep group-hover:scale-110 transition">▶</div>
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-2.5 shadow-sm">
+              <p class="text-xs font-bold text-pastel-textMain truncate">Mega Cuchara @nico.m</p>
+              <p class="text-[11px] text-pastel-lilacDeep font-medium">🔮 3 paladas mágicas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-56 sm:w-60 shrink-0 snap-start bg-white/90 backdrop-blur-md border border-white/80 rounded-3xl p-3 shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-200">
+          <div class="h-64 sm:h-72 rounded-2xl bg-gradient-to-b from-emerald-50 via-purple-100 to-pink-100 flex flex-col justify-between p-3.5 relative overflow-hidden group cursor-pointer">
+            <span class="self-end bg-white/90 backdrop-blur-sm text-[10px] font-bold text-pastel-textMain px-2.5 py-0.5 rounded-full shadow-sm">TikTok</span>
+            <div class="w-12 h-12 rounded-full bg-white/90 shadow-md self-center flex items-center justify-center text-pastel-lilacDeep group-hover:scale-110 transition">▶</div>
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-2.5 shadow-sm">
+              <p class="text-xs font-bold text-pastel-textMain truncate">Mini Scoop @daniela_k</p>
+              <p class="text-[11px] text-emerald-600 font-medium">👑 Gato amuleto especial</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-56 sm:w-60 shrink-0 snap-start bg-white/90 backdrop-blur-md border border-white/80 rounded-3xl p-3 shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-200">
+          <div class="h-64 sm:h-72 rounded-2xl bg-gradient-to-b from-purple-100 via-sky-50 to-pink-100 flex flex-col justify-between p-3.5 relative overflow-hidden group cursor-pointer">
+            <span class="self-end bg-white/90 backdrop-blur-sm text-[10px] font-bold text-pastel-textMain px-2.5 py-0.5 rounded-full shadow-sm">En Vivo</span>
+            <div class="w-12 h-12 rounded-full bg-white/90 shadow-md self-center flex items-center justify-center text-pastel-lilacDeep group-hover:scale-110 transition">▶</div>
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-2.5 shadow-sm">
+              <p class="text-xs font-bold text-pastel-textMain truncate">Live de Medianoche ✨</p>
+              <p class="text-[11px] text-amber-700 font-medium">🌸 Unboxing revelado</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 4: CONFIGURADOR & CHECKOUT WHATSAPP (#shop)
+  ======================================================== -->
+  <section id="shop" class="py-16 sm:py-20 max-w-xl mx-auto px-4">
+    
+    <!-- Título de la sección -->
+    <div class="text-center mb-8 sm:mb-10">
+      <span class="inline-block text-xs font-bold text-pastel-lilacDeep uppercase tracking-wider bg-white px-3.5 py-1 rounded-full border border-pastel-border shadow-sm mb-2">
+        Ordena tu suerte ✨
+      </span>
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-pastel-textMain mt-1">
+        Configura tu Scoop
+      </h2>
+    </div>
+
+    <!-- Contenedor con mayor separación entre bloques (space-y-6 sm:space-y-8) -->
+    <div class="space-y-6 sm:space-y-8">
+      
+      <!-- Bloque 1: Elección de tamaño -->
+      <div class="bg-white rounded-3xl p-6 sm:p-7 border border-pastel-border shadow-sm">
+        <h3 class="text-xs font-bold text-pastel-textMain mb-4 uppercase tracking-wider flex items-center gap-2">
+          <span>🥄</span> 1. Elige tu tamaño
+        </h3>
+        
+        <div class="space-y-3">
+          <!-- 1 Scoop: $8 -->
+          <label class="flex items-center justify-between p-3.5 sm:p-4 border-2 border-pastel-border rounded-2xl cursor-pointer has-[:checked]:border-pastel-lilacDeep has-[:checked]:bg-pastel-bg/60 transition">
+            <div class="flex items-center gap-3">
+              <input type="radio" name="scoop_tier" value="1 Scoop (1 Pala)" data-price="8.00" class="accent-pastel-lilacDeep w-4 h-4" checked onchange="calcularTotal()">
+              <div>
+                <p class="font-bold text-xs sm:text-sm text-pastel-textMain">1 Scoop (1 Pala)</p>
+                <p class="text-[11px] text-pastel-textMuted">4 a 6 artículos sorpresa</p>
+              </div>
+            </div>
+            <span class="font-extrabold text-xs sm:text-sm text-pastel-lilacDeep">$8.00</span>
+          </label>
+
+          <!-- dos Scoop: $15 -->
+          <label class="flex items-center justify-between p-3.5 sm:p-4 border-2 border-pastel-border rounded-2xl cursor-pointer has-[:checked]:border-pastel-lilacDeep has-[:checked]:bg-pastel-bg/60 transition">
+            <div class="flex items-center gap-3">
+              <input type="radio" name="scoop_tier" value="Tres Scoop (3 Palas)" data-price="15.00" class="accent-pastel-lilacDeep w-4 h-4" onchange="calcularTotal()">
+              <div>
+                <p class="font-bold text-xs sm:text-sm text-pastel-textMain">2 Scoop (2 Palas)</p>
+                <p class="text-[11px] text-pastel-textMuted">9-14 piezas + 1 amuleto raro</p>
+              </div>
+            </div>
+            <span class="font-extrabold text-xs sm:text-sm text-pastel-lilacDeep">$15.00</span>
+          </label>
+
+          <!-- Nina's Scoops: $25 -->
+          <label class="flex items-center justify-between p-3.5 sm:p-4 border-2 border-pastel-border rounded-2xl cursor-pointer has-[:checked]:border-pastel-lilacDeep has-[:checked]:bg-pastel-bg/60 transition">
+            <div class="flex items-center gap-3">
+              <input type="radio" name="scoop_tier" value="Nina's Scoops" data-price="25.00" class="accent-pastel-lilacDeep w-4 h-4" onchange="calcularTotal()">
+              <div>
+                <p class="font-bold text-xs sm:text-sm text-pastel-textMain">Nina's Scoops</p>
+                <p class="text-[11px] text-pastel-textMuted">Tres scoops + 2 piezas legendarias</p>
+              </div>
+            </div>
+            <span class="font-extrabold text-xs sm:text-sm text-pastel-lilacDeep">$25.00</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Detalles y personalización -->
+      <div class="bg-white rounded-3xl p-6 sm:p-7 border border-pastel-border shadow-sm space-y-4">
+        <h3 class="text-xs font-bold text-pastel-textMain uppercase tracking-wider flex items-center gap-2">
+          <span>✨</span> 2. Detalles del pedido
+        </h3>
+        
+        <div>
+          <label class="block text-[11px] font-semibold text-pastel-textMuted mb-1.5">
+            Nombre o @usuario para el video:
+          </label>
+          <input type="text" id="username" placeholder="Ej: @camila.suerte" class="w-full text-xs px-4 py-2.5 rounded-xl border border-pastel-border bg-pastel-bg text-pastel-textMain focus:outline-none focus:ring-2 focus:ring-pastel-lilacDeep transition">
+        </div>
+        
+        <div>
+          <label class="block text-[11px] font-semibold text-pastel-textMuted mb-1.5">
+            Comentarios o tonos favoritos (opcional):
+          </label>
+          <textarea id="notes" rows="2" placeholder="Ej: Prefiero tonos rosas o papelería." class="w-full text-xs px-4 py-2 rounded-xl border border-pastel-border bg-pastel-bg text-pastel-textMain focus:outline-none focus:ring-2 focus:ring-pastel-lilacDeep transition"></textarea>
+        </div>
+        
+        <label class="flex items-start gap-3 cursor-pointer pt-1">
+          <input type="checkbox" id="record-video" checked class="accent-pastel-lilacDeep w-4 h-4 mt-0.5">
+          <span class="text-xs text-pastel-textMuted leading-relaxed">
+            Grabar video de mi scoop para redes sociales (TikTok).
+          </span>
+        </label>
+      </div>
+
+      <!-- Bloque 3: Resumen de pago y WhatsApp -->
+      <div class="bg-white rounded-3xl p-6 sm:p-7 border-2 border-pastel-lilac shadow-md">
+        
+        <div class="flex justify-between items-center pb-3 border-b border-pastel-border">
+          <span class="text-xs text-pastel-textMuted font-medium">Subtotal Scoop:</span>
+          <span class="text-2xl font-extrabold text-pastel-lilacDeep" id="total-price">$8.00</span>
+        </div>
+
+        <!-- Mención discreta de Servientrega -->
+        <div class="py-3 text-[11px] text-pastel-textMuted space-y-1">
+          <p class="flex items-center justify-between">
+            <span>🚚 Envío Servientrega (Local / Nacional):</span>
+            <span class="font-bold text-pastel-textMain">$5.00 - $7.00</span>
+          </p>
+          <p class="text-[10px] text-pastel-textMuted/80 italic">
+            * Para Galápagos se cotiza por interno al coordinar por WhatsApp.
+          </p>
+        </div>
+
+        <button onclick="enviarPedido()" class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 rounded-2xl transition flex items-center justify-center gap-2 text-sm shadow-sm hover:shadow hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          Completar pedido en WhatsApp
+        </button>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- ========================================================
+       FOOTER & REDES SOCIALES
+  ======================================================== -->
+  <footer class="bg-white border-t border-pastel-border py-12 px-4 sm:px-6">
+    <div class="max-w-xl mx-auto text-center">
+      
+      <div class="w-12 h-12 bg-pastel-lilac/30 rounded-full flex items-center justify-center mx-auto mb-3 text-2xl shadow-inner">
+        🐾
+      </div>
+      
+      <h3 class="font-display text-xl sm:text-2xl font-extrabold text-pastel-textMain">
+        Únete a nuestros rituales ✨
+      </h3>
+      <p class="text-xs sm:text-sm text-pastel-textMuted mt-1 mb-6">
+        Síguenos para ver unboxings diarios, revelación de scoops en vivo y dinámicas exclusivas.
+      </p>
+
+      <!-- Redes Sociales -->
+      <div class="flex flex-wrap justify-center items-center gap-3 mb-8">
+        <a href="https://tiktok.com/@tu_usuario" target="_blank" class="flex items-center gap-2 bg-pastel-bg hover:bg-pastel-lilac/40 border border-pastel-border text-pastel-textMain px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold shadow-sm transition hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.99v7.75c-.01 2.32-.78 4.67-2.34 6.38-1.74 1.96-4.35 3.03-6.99 2.87-2.92-.15-5.63-1.79-7.01-4.38-1.52-2.78-1.29-6.38.58-8.94 1.7-2.35 4.54-3.69 7.45-3.41v4.13c-1.42-.15-2.9.27-3.97 1.25-.99.88-1.5 2.24-1.37 3.57.11 1.34.92 2.53 2.13 3.12 1.23.61 2.75.52 3.89-.25.86-.56 1.41-1.53 1.48-2.54V.02z"/></svg>
+          <span>TikTok</span>
+        </a>
+
+        <a href="https://wa.me/593988241141" target="_blank" class="flex items-center gap-2 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/30 text-emerald-700 px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold shadow-sm transition hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Enlaces Legales -->
+      <div class="flex justify-center items-center gap-4 text-xs font-semibold text-pastel-textMuted border-t border-pastel-border pt-6 mb-3">
+        <a href="terminos-y-condiciones.html" class="hover:text-pastel-lilacDeep transition underline-offset-2 hover:underline">Términos y Condiciones</a>
+        <span>•</span>
+        <a href="privacidad.html" class="hover:text-pastel-lilacDeep transition underline-offset-2 hover:underline">Política de Privacidad</a>
+      </div>
+
+      <p class="text-[11px] text-pastel-textMuted">
+        © 2026 Nina's scoops. Todos los derechos reservados ✨
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

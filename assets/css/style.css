@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Quicksand:wght@500;600;700;800&display=swap');
+
+/* Ocultar barra de desplazamiento manteniendo funcionalidad táctil */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Reglas condicionales para pantallas panorámicas / Laptop */
+@media (min-width: 1024px) {
+  #home {
+    background-size: 100% auto !important;
+  }
+  #how-it-works {
+    background-position: center top -200px !important;
+    background-size: 100% auto !important;
+  }
+}
